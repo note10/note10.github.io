@@ -7,13 +7,14 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #fff9db;
 }
 body {
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Gothic A1', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #333333;
   padding: 20px;
   margin: 0;
@@ -59,7 +60,7 @@ img {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #f59f00;
   &.image {
     display: block;
     text-align: center;
@@ -73,19 +74,19 @@ mark {
   padding: 0 5px;
 }
 blockquote {
-  border-left: 5px solid #ccc;
+  border-left: 0px solid #ccc;
   margin: 40px 0;
   padding: 5px 30px;
-  background: #eee;
+  background: #fff3bf;
 }
 .logo {
   position: relative;
   margin: 0 auto 35px;
   text-align: center;
-  animation-duration: 0.7s;
+  animation-duration: 0s;
   animation-fill-mode: both;
   animation-name: bounce;
-  -webkit-animation-duration: 0.7s;
+  -webkit-animation-duration: 0s;
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: bounce;
   a {
@@ -100,18 +101,17 @@ blockquote {
     display: inline-block;
     text-align: center;
     line-height: 100px;
-    border: 5px solid #fff;
+    border: 0px solid #fff;
     box-sizing: border-box;
     &:hover,
     &:focus {
-      background: #f14e32;
+      background: #fff9db;
     }
     &:hover + .logo-prompt,
     &:focus + .logo-prompt {
       display: inline-block !important;
     }
     .logo-avatar {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
@@ -128,10 +128,10 @@ blockquote {
     vertical-align: middle;
     padding: 5px;
     border-radius: 3px;
-    background: #666;
-    background: rgba(0,0,0,.5);
+    background: #ffe066;
+    background: rgba(0,0,0,0);
     margin-left: 15px;
-    color: #fff;
+    color: #f08c00;
     font-size: 0.8235em;
     text-align: center;
     line-height: 1.2;
@@ -141,8 +141,8 @@ blockquote {
       content: "";
       border-width: 5px 5px 5px 0;
       border-style: solid;
-      border-color: transparent #666;
-      border-color: transparent rgba(0,0,0,.5);
+      border-color: transparent #f08c00;
+      border-color: transparent #f08c00;
       position: absolute;
       top: 50%;
       left: -5px;
@@ -172,17 +172,17 @@ sup {
   margin-left: 1px;
 }
 time {
-  color: #555;
+  color: #f59f00;
 }
 code,
 pre,
 .code,
 .footnotes {
-  font-family: Consolas, monaco, monospace;
+  font-family: 'Roboto Mono', Consolas, monaco, monospace;
 }
 code {
-  color: #f14e32;
-  background: #eee;
+  color: #e67700;
+  background: #fff3bf;
   padding: 2px 6px;
   font-size: 13px;
 }
@@ -194,8 +194,8 @@ pre {
   line-height: 1.4;
   white-space: pre;
   overflow-x: auto;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #ffffff;
+  border: 1px solid #ffec99;
   padding: 1rem;
   code {
     font-size: 100%;
@@ -232,10 +232,7 @@ article {
     font-size: 1.4em;
   }
   .divider {
-    background: #ddd;
-    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
-    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
-    background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    background: #ffec99;
     height: 1px;
     margin: 2em 0;
   }
@@ -255,8 +252,8 @@ article {
   }
   .footnote {
     border: 0;
-    background-color: #0087BE;
-    color: #fff;
+    background-color: #transparent;
+    color: #e67700;
     padding-left: 2px;
     padding-right: 2px;
   }
@@ -278,12 +275,12 @@ article {
     }
     .reversefootnote {
       border: 0;
-      color: #0087BE;
+      color: #e67700;
     }
   }
   a:hover {
-    color: #369;
-    border-color: #369;
+    color: #e67700;
+    border-color: #f59f00;
   }
 }
 .back {
@@ -324,7 +321,7 @@ article {
 }
 .footer {
   margin-top: 50px;
-  color: #777;
+  color: #333333;
   a {
     border: none;
     font-weight: bold;
@@ -358,14 +355,14 @@ section {
       }
       span {
         display: inline-block;
-        color: #757575;
+        color: #f59f00;
         letter-spacing: 1px;
         text-transform: uppercase;
       }
       @media (min-width: 992px) {a {
-          border-bottom: 2px solid transparent;
+          border-bottom: 1px solid transparent;
           &:hover {
-            border-color: #000;
+            border-color: #fcc419;
           }
         }
       }

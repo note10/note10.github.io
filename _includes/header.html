@@ -1,15 +1,16 @@
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto+Mono&display=swap" rel="stylesheet">
 <aside class="logo">
 
 	{% if page.url == '/index.html' or page.url == '/' %}
 		{% assign link = '/about' %}
-		{% assign prompt = 'About the Author' %}
+		{% assign prompt = 'About' %}
 	{% else %}
 		{% assign link = '/' %}
-		{% assign prompt = 'Back to Index' %}
+		{% assign prompt = 'Back to Main' %}
 	{% endif %}
 
 	<a href="{{ link | prepend: site.baseurl | prepend: site.url }}">
-		<img src="{{ site.logo_url }}" alt="" class="logo-avatar">
+		<img src="https://note10.github.io/assets/titleimg.png" alt="" class="">
 	</a>
 	<span class="logo-prompt code">{{ prompt }}</span>
 
