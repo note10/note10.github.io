@@ -20,6 +20,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+  ::-moz-selection{color:#fff;background-color:#fcc419}::selection{color:#fff;background-color:#fcc419}
   @media (min-width: 992px) {
     padding: 35px 50px;
   }
